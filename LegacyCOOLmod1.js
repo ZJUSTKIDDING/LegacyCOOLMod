@@ -55,9 +55,9 @@ func:function()
 	//First we add the new resources 
 		new G.Res({
 		name:'Berries',
-		desc:'[Berries] taste sweet, but spoil quickly.',
+		desc:'[Berries] taste sweet, but spoil quickly. Also they have a weird rainbow glow. What can it mean?',
 		icon:[1,1,'imageSheet'],
-		turnToByContext:{'eat':{'health':0.05,'happiness':0.3},'decay':{'spoiled food':0.8}},//this basically translates to : "when eaten, generate some health and happiness; when rotting, turn into either nothing or some spoiled food"
+		turnToByContext:{'eat':{'health':500,'happiness':255},'decay':{'spoiled food':0.8}},//this basically translates to : "when eaten, generate some health and happiness; when rotting, turn into either nothing or some spoiled food"
 		partOf:'food',
 		category:'food',
 	});
